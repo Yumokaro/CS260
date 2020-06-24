@@ -3,4 +3,4 @@ project(CS260)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CS260 main.cpp)
+add_executable(CS260 Assignment03/linked_list.cpp)

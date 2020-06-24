@@ -122,32 +122,32 @@ CS260/fast:
 	$(MAKE) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/build
 .PHONY : CS260/fast
 
-main.obj: main.cpp.obj
+Assignment03/linked_list.obj: Assignment03/linked_list.cpp.obj
 
-.PHONY : main.obj
+.PHONY : Assignment03/linked_list.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+Assignment03/linked_list.cpp.obj:
+	$(MAKE) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/Assignment03/linked_list.cpp.obj
+.PHONY : Assignment03/linked_list.cpp.obj
 
-main.i: main.cpp.i
+Assignment03/linked_list.i: Assignment03/linked_list.cpp.i
 
-.PHONY : main.i
+.PHONY : Assignment03/linked_list.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/main.cpp.i
-.PHONY : main.cpp.i
+Assignment03/linked_list.cpp.i:
+	$(MAKE) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/Assignment03/linked_list.cpp.i
+.PHONY : Assignment03/linked_list.cpp.i
 
-main.s: main.cpp.s
+Assignment03/linked_list.s: Assignment03/linked_list.cpp.s
 
-.PHONY : main.s
+.PHONY : Assignment03/linked_list.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/main.cpp.s
-.PHONY : main.cpp.s
+Assignment03/linked_list.cpp.s:
+	$(MAKE) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/Assignment03/linked_list.cpp.s
+.PHONY : Assignment03/linked_list.cpp.s
 
 # Help Target
 help:
@@ -158,9 +158,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... CS260
 	@echo ... edit_cache
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... Assignment03/linked_list.obj
+	@echo ... Assignment03/linked_list.i
+	@echo ... Assignment03/linked_list.s
 .PHONY : help
 
 
