@@ -1,0 +1,9 @@
+pop,top,push,display
+
+Queue (FIFO):
+1. enqueue(); dequeue(); display()
+2. Possibly an int or char. temporary variables for nodes. pointer references.
+
+Linked List:
+3. add in a function to insertIntoPostion().
+4. temp variables to hold position values while inserting the new pointers using the insertion function of a new node.  data(int or char). position.
