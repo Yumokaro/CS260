@@ -27,15 +27,24 @@ public:
         qArray[++tail] = value;
 
     }
-/*
+
     void dequeue() {
         // check if list is empty
         if(head == -1){
             cout << "Queue is empty, cannot dequeue" << endl;
+            return;
+        }
+        // reset
+            // reset queue when only one value is left
+        else if(head == tail) {
+            cout << "The queue has been reset to default [0]" << endl;
+            head = -1;
+            tail = -1;
         }
 
+
     }
-*/
+
     void printValues() {
         cout << "The size of the array is: " << sizeof(qArray)/sizeof(qArray[0]) << endl;
         // check if queue has values
@@ -44,16 +53,7 @@ public:
                 cout << qArray[i] << endl;
             }
         }
-        // reset queue when only one value is left
-        else if(head == tail) {
-            cout << "The queue has been reset to default [0]" << endl;
-            head = -1;
-            tail = -1;
-        }
-        // move up head in the list
-        else {
-            head++;
-        }
+
     }
 };
 
