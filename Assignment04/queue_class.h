@@ -29,7 +29,7 @@ public:
     }
 
     void dequeue() {
-
+        cout << "Removed a value from head of queue" << endl;
         if(head == -1){
             // check if list is empty
             cout << "Queue is empty, cannot dequeue" << endl;

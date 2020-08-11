@@ -32,6 +32,7 @@ int main() {
     // Object
     Queue q;
     q.printValues();
+    cout << endl;
 
     q.enqueue(55);
     q.enqueue(1);
@@ -39,8 +40,14 @@ int main() {
     q.enqueue(28);
     q.enqueue(7);
     q.enqueue(14);
-
     q.printValues();
+    cout << endl;
+
+    q.dequeue();
+    q.dequeue();
+    q.dequeue();
+    q.printValues();
+    cout << endl;
 
     q.dequeue();
     q.dequeue();
