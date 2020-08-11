@@ -29,29 +29,43 @@ public:
     }
 
     void dequeue() {
-        // check if list is empty
+
         if(head == -1){
+            // check if list is empty
             cout << "Queue is empty, cannot dequeue" << endl;
             return;
         }
-        // reset
-            // reset queue when only one value is left
         else if(head == tail) {
+            // reset queue when only one value is left
             cout << "The queue has been reset to default [0]" << endl;
             head = -1;
             tail = -1;
+            return;
         }
-
-
+        else {
+            // Bump head up by one position
+            head++;
+        }
     }
 
     void printValues() {
-        cout << "The size of the array is: " << sizeof(qArray)/sizeof(qArray[0]) << endl;
+        if(head == -1) {
+            cout << "The queue is empty" << endl;
+        }
+
         // check if queue has values
-        if(head != -1) {
+        else {
+            cout << "The size of the array is: " << sizeof(qArray)/sizeof(qArray[0]) << endl;
+            cout << "And the Queue is now: {";
             for(int i = head; i <= tail; i++) {
-                cout << qArray[i] << endl;
+                if (i == head) {
+                    cout << qArray[i];
+                }
+                else {
+                    cout << ", " << qArray[i];
+                }
             }
+            cout << "}" << endl;
         }
 
     }

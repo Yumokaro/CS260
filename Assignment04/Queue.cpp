@@ -3,6 +3,8 @@
 #include <iostream>
 #include "queue_class.h"
 
+#include <array>
+
 using std::cout;
 using std::endl;
 using namespace std;
@@ -29,6 +31,8 @@ class Queue {
 int main() {
     // Object
     Queue q;
+    q.printValues();
+
     q.enqueue(55);
     q.enqueue(1);
     q.enqueue(3);
@@ -36,6 +40,11 @@ int main() {
     q.enqueue(7);
     q.enqueue(14);
 
+    q.printValues();
+
+    q.dequeue();
+    q.dequeue();
+    q.dequeue();
     q.printValues();
 
     return 0;
