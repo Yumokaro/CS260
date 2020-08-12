@@ -1,32 +1,12 @@
 // Using variable of int to combine assignment #3 and #4
 
+//#include <array>
 #include <iostream>
 #include "queue_class.h"
-
-#include <array>
 
 using std::cout;
 using std::endl;
 using namespace std;
-/*
-class Queue {
-    int qArray[6];
-    int head;
-    int tail;
-
-    Queue() {
-        head = -1;
-        tail = -1;
-    }
-    void enqueue(int value) {
-        // check if queue is empty
-        if (head == -1)
-            head++;
-        // increment last then assign value
-        qArray[++tail] = value;
-    }
-};
-*/
 
 int main() {
     // Object

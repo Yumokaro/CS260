@@ -2,6 +2,7 @@
 #define CS260_QUEUE_CLASS_H
 
 #include <array>
+#include <iostream>
 
 using std::cout;
 using std::endl;
@@ -25,7 +26,6 @@ public:
             head++;
         // increment last then assign value
         qArray[++tail] = value;
-
     }
 
     void dequeue() {
@@ -67,7 +67,6 @@ public:
             }
             cout << "}" << endl;
         }
-
     }
 };
 
