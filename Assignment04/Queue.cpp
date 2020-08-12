@@ -2,7 +2,7 @@
 
 //#include <array>
 #include <iostream>
-#include "queue_class.h"
+#include "queue_class.cpp"
 
 using std::cout;
 using std::endl;
