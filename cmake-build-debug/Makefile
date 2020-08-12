@@ -142,32 +142,32 @@ CS260/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/build
 .PHONY : CS260/fast
 
-Assignment04/Queue.obj: Assignment04/Queue.cpp.obj
+Assignment03/linked_list.obj: Assignment03/linked_list.cpp.obj
 
-.PHONY : Assignment04/Queue.obj
+.PHONY : Assignment03/linked_list.obj
 
 # target to build an object file
-Assignment04/Queue.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/Assignment04/Queue.cpp.obj
-.PHONY : Assignment04/Queue.cpp.obj
+Assignment03/linked_list.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/Assignment03/linked_list.cpp.obj
+.PHONY : Assignment03/linked_list.cpp.obj
 
-Assignment04/Queue.i: Assignment04/Queue.cpp.i
+Assignment03/linked_list.i: Assignment03/linked_list.cpp.i
 
-.PHONY : Assignment04/Queue.i
+.PHONY : Assignment03/linked_list.i
 
 # target to preprocess a source file
-Assignment04/Queue.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/Assignment04/Queue.cpp.i
-.PHONY : Assignment04/Queue.cpp.i
+Assignment03/linked_list.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/Assignment03/linked_list.cpp.i
+.PHONY : Assignment03/linked_list.cpp.i
 
-Assignment04/Queue.s: Assignment04/Queue.cpp.s
+Assignment03/linked_list.s: Assignment03/linked_list.cpp.s
 
-.PHONY : Assignment04/Queue.s
+.PHONY : Assignment03/linked_list.s
 
 # target to generate assembly for a file
-Assignment04/Queue.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/Assignment04/Queue.cpp.s
-.PHONY : Assignment04/Queue.cpp.s
+Assignment03/linked_list.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/Assignment03/linked_list.cpp.s
+.PHONY : Assignment03/linked_list.cpp.s
 
 # Help Target
 help:
@@ -178,9 +178,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... CS260
-	@echo ... Assignment04/Queue.obj
-	@echo ... Assignment04/Queue.i
-	@echo ... Assignment04/Queue.s
+	@echo ... Assignment03/linked_list.obj
+	@echo ... Assignment03/linked_list.i
+	@echo ... Assignment03/linked_list.s
 .PHONY : help
 
 
