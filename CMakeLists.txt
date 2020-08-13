@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 14)
 
 
 # Assignment 03
-add_executable(CS260 Assignment03/linked_list.cpp)
+add_executable(CS260 Assignment03/Queue.cpp)
 
 # Assignment 04
-#add_executable(CS260 Assignment04/Queue.cpp)
+
