@@ -33,12 +33,12 @@ int main() {
     q.printValues();
     cout << endl;
 
-    q.enqueue(3);
-    q.enqueue(1);
-    q.enqueue(3);
-    q.enqueue(28);
-    q.enqueue(7);
-    q.enqueue(14);
+    q.enqueue(n1.value);
+    q.enqueue(n2.value);
+    q.enqueue(n3.value);
+    q.enqueue(n4.value);
+    q.enqueue(n5.value);
+    q.enqueue(n6.value);
     q.printValues();
     cout << endl;
 
