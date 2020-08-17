@@ -28,8 +28,6 @@ int main() {
 
     print(head);
 
-
-/*
     // Queue Object
     Queue q;
     q.printValues();
@@ -54,6 +52,6 @@ int main() {
     q.dequeue();
     q.dequeue();
     q.printValues();
-*/
+
     return 0;
 }

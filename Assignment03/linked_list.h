@@ -19,6 +19,12 @@ class Node {
         };
 };
 
+// Insert a node
+Node* insert_node() {
+    int value;
+    return 0;
+};
+
 // Print each node
 void print(Node *head) {
     Node *temp = head;
