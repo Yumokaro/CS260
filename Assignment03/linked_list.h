@@ -19,11 +19,15 @@ class Node {
         };
 };
 
-void print(Node *&head) {
-    if(head != NULL) {
-        cout << head->value << ", ";
+// Print each node
+void print(Node *head) {
+    Node *temp = head;
+
+    while(temp != NULL) {
+        cout << temp->value << ", ";
+        temp = temp->next;
     }
-    cout << "NULL" << endl;
+    cout << "END" << endl;
 };
 
 
