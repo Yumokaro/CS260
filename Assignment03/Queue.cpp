@@ -9,16 +9,23 @@ using std::cout;
 using std::endl;
 using namespace std;
 
-
-
-
-
 int main() {
+    // Manual assign of LL
     Node n1(2);
     Node n2(5);
+    Node n3(17);
+    Node n4(1);
+    Node n5(22);
+    Node n6(18);
 
     n1.next = &n2;
-    cout << n2.value << endl;
+    n2.next = &n3;
+    n3.next = &n4;
+    n4.next = &n5;
+    n5.next = &n6;
+    n6.next = NULL;
+
+    Node *head = &n1;
 
 
     // Object
