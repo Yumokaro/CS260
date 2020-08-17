@@ -17,6 +17,7 @@ int main() {
     Node n4(1);
     Node n5(22);
     Node n6(18);
+    Node *head = &n1;
 
     n1.next = &n2;
     n2.next = &n3;
@@ -25,6 +26,10 @@ int main() {
     n5.next = &n6;
     n6.next = NULL;
 
+    print(head);
+
+
+/*
     // Queue Object
     Queue q;
     q.printValues();
@@ -49,6 +54,6 @@ int main() {
     q.dequeue();
     q.dequeue();
     q.printValues();
-
+*/
     return 0;
 }
