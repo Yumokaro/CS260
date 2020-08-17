@@ -25,10 +25,7 @@ int main() {
     n5.next = &n6;
     n6.next = NULL;
 
-    Node *head = &n1;
-
-
-    // Object
+    // Queue Object
     Queue q;
     q.printValues();
     cout << endl;
