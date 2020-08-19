@@ -4,3 +4,6 @@
 CMakeFiles/CS260.dir/Assignment04/Main.cpp.obj: ../Assignment04/Main.cpp
 CMakeFiles/CS260.dir/Assignment04/Main.cpp.obj: ../Assignment04/Main.h
 
+CMakeFiles/CS260.dir/Assignment04/linked_list.cpp.obj: ../Assignment04/linked_list.cpp
+CMakeFiles/CS260.dir/Assignment04/linked_list.cpp.obj: ../Assignment04/linked_list.h
+

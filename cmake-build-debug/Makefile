@@ -169,6 +169,33 @@ Assignment04/Main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/Assignment04/Main.cpp.s
 .PHONY : Assignment04/Main.cpp.s
 
+Assignment04/linked_list.obj: Assignment04/linked_list.cpp.obj
+
+.PHONY : Assignment04/linked_list.obj
+
+# target to build an object file
+Assignment04/linked_list.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/Assignment04/linked_list.cpp.obj
+.PHONY : Assignment04/linked_list.cpp.obj
+
+Assignment04/linked_list.i: Assignment04/linked_list.cpp.i
+
+.PHONY : Assignment04/linked_list.i
+
+# target to preprocess a source file
+Assignment04/linked_list.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/Assignment04/linked_list.cpp.i
+.PHONY : Assignment04/linked_list.cpp.i
+
+Assignment04/linked_list.s: Assignment04/linked_list.cpp.s
+
+.PHONY : Assignment04/linked_list.s
+
+# target to generate assembly for a file
+Assignment04/linked_list.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/Assignment04/linked_list.cpp.s
+.PHONY : Assignment04/linked_list.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -181,6 +208,9 @@ help:
 	@echo ... Assignment04/Main.obj
 	@echo ... Assignment04/Main.i
 	@echo ... Assignment04/Main.s
+	@echo ... Assignment04/linked_list.obj
+	@echo ... Assignment04/linked_list.i
+	@echo ... Assignment04/linked_list.s
 .PHONY : help
 
 

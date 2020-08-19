@@ -86,6 +86,12 @@
 		<Unit filename="C:/Users/Tempo/OneDrive/Documents/Code Projects/School/CS260/Assignment04/Main.h">
 			<Option target="CS260"/>
 		</Unit>
+		<Unit filename="C:/Users/Tempo/OneDrive/Documents/Code Projects/School/CS260/Assignment04/linked_list.cpp">
+			<Option target="CS260"/>
+		</Unit>
+		<Unit filename="C:/Users/Tempo/OneDrive/Documents/Code Projects/School/CS260/Assignment04/linked_list.h">
+			<Option target="CS260"/>
+		</Unit>
 		<Unit filename="C:/Users/Tempo/OneDrive/Documents/Code Projects/School/CS260/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

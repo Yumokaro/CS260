@@ -93,12 +93,12 @@ clean: CMakeFiles/CS260.dir/clean
 CMakeFiles/CS260.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Tempo\OneDrive\Documents\Code Projects\School\CS260\cmake-build-debug\CMakeFiles" --progress-num=1,2 "Built target CS260"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Tempo\OneDrive\Documents\Code Projects\School\CS260\cmake-build-debug\CMakeFiles" --progress-num=1,2,3 "Built target CS260"
 .PHONY : CMakeFiles/CS260.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CS260.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Tempo\OneDrive\Documents\Code Projects\School\CS260\cmake-build-debug\CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Tempo\OneDrive\Documents\Code Projects\School\CS260\cmake-build-debug\CMakeFiles" 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/CS260.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Tempo\OneDrive\Documents\Code Projects\School\CS260\cmake-build-debug\CMakeFiles" 0
 .PHONY : CMakeFiles/CS260.dir/rule
