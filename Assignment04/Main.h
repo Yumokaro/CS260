@@ -29,22 +29,59 @@ Node* newNode(int value) {
 
 // Make a new node
 Node* create_node(int value) {
-    if (head == NULL) {
-        return newNode(value);
-    } else {
-        Node *current = head;
 
-        while (current->next != NULL) {
+        if (head == NULL) {
+            return newNode(value);
+        } else {
+            Node *current = head;
+
+            while (current->next != NULL) {
+                current = current->next;
+            }
+
+            current->next = newNode(value);
+
+            return current->next;
+        }
+}
+
+int count = 0;
+void inquire_node(int pos) {
+    Node *current = head;
+
+    while (current != NULL) {
+        // position - 1, starts at 0
+        if ((pos - 1) == count) {
+            cout << current->value;
+        }
+        else {
             current = current->next;
         }
-
-        current->next = newNode(value);
-
-        return current->next;
+        count++;
     }
 }
 
-void print_nodes () {
+void insert_node(Node** current, int pos, int value) {
+
+    // Take pos parameter and count down to zero / cycle through this many nodes
+    while (pos--) {
+        // And then make a new node
+        if (pos == 0) {
+            Node* temp = newNode(value);
+            temp->next = *current;
+            *current = temp;
+        }
+        else {
+            current = &(*current)->next;
+        }
+    }
+}
+
+void remove_node(Node** current, int pos) {
+
+}
+
+void print_nodes() {
     Node *current = head;
 
     cout << "{ ";
@@ -67,6 +104,17 @@ int main() {
 
     print_nodes();
 
+    cout << "\nInserting a node at position 3, value is 22" << endl;
+    insert_node(&head, 3, 22);
+
+    print_nodes();
+
+    cout << "\nWhat value is at position three?" << endl;
+    inquire_node(3);
+
+    cout << "\nI don't like that number, remove it" << endl;
+    remove_node(&head, 3);
+    print_nodes();
 
     return 0;
 };
