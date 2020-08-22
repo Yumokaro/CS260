@@ -77,8 +77,25 @@ void insert_node(Node** current, int pos, int value) {
     }
 }
 
-void remove_node(Node** current, int pos) {
+void remove_node(int pos) {
+    Node *current = head;
+    // Check if first node
+    if (pos == 1) {
+        head = current->next;
+        free(current);
+    }
+    else {
+        // must have three nodes to work with; abc >> ac
+        for (int i = 0; i < (pos-2); i++) {
+            current = current->next;
+        }
 
+        Node *temp = current->next;
+
+        current->next = temp->next;
+        free(temp);
+    }
+    // Could make statement to check if out of bounds
 }
 
 void print_nodes() {
@@ -113,7 +130,7 @@ int main() {
     inquire_node(3);
 
     cout << "\nI don't like that number, remove it" << endl;
-    remove_node(&head, 3);
+    remove_node(3);
     print_nodes();
 
     return 0;
