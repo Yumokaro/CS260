@@ -10,8 +10,8 @@ using namespace std;
 // Node structure
 struct Node {
     int value;
-    Node *next;
-    Node *previous;
+    Node *right;
+    Node *left;
 };
 
 
