@@ -7,8 +7,12 @@ using std::cout;
 using std::endl;
 using namespace std;
 
-
-
+// Node structure
+struct Node {
+    int value;
+    Node *next;
+    Node *previous;
+};
 
 
 
