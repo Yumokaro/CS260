@@ -80,10 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Tempo/OneDrive/Documents/Code Projects/School/CS260/Assignment04/Main.cpp">
-			<Option target="CS260"/>
-		</Unit>
-		<Unit filename="C:/Users/Tempo/OneDrive/Documents/Code Projects/School/CS260/Assignment04/Main.h">
+		<Unit filename="C:/Users/Tempo/OneDrive/Documents/Code Projects/School/CS260/Assignment06/Main.cpp">
 			<Option target="CS260"/>
 		</Unit>
 		<Unit filename="C:/Users/Tempo/OneDrive/Documents/Code Projects/School/CS260/CMakeLists.txt">
