@@ -26,7 +26,9 @@ Node *newNode(int value) {
 Node *insertNode(Node *root, int value) {
     if (root == NULL) {
         return newNode(value);
-    } else if (value < root->value) {
+    }
+
+    if (value < root->value) {
         root->left = insertNode(root->left, value);
     } else if (value >= root->value) {
         root->right = insertNode(root->right, value);
