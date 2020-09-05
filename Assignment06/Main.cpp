@@ -1,4 +1,4 @@
-// Prime numbers: 3,5,7,11,13,17,19,23,29,31,37,39,41,43,47
+// Prime numbers: 3,5,7,11,13,17,19
 
 #include <array>
 #include <iostream>
@@ -23,12 +23,12 @@ Node *newNode(int value) {
     return node;
 }
 
-Node *insert(Node *root, int value) {
+Node *insertNode(Node *root, int value) {
 
     if(value < root->value) {
-        root->left = insert(root->left, value);
+        root->left = insertNode(root->left, value);
     } else if (value > root->value) {
-        root->right = insert(root->right, value);
+        root->right = insertNode(root->right, value);
     }
 
     return root;
@@ -40,6 +40,17 @@ Node *insert(Node *root, int value) {
 int main() {
 
     cout << "hello" << endl;
+
+    Node *root = NULL;
+    root = newNode(13);
+
+    insertNode(root, 19);
+    insertNode(root, 11);
+    insertNode(root, 3);
+    insertNode(root, 7);
+    insertNode(root, 17);
+    insertNode(root, 5);
+
 
     return 0;
 }
