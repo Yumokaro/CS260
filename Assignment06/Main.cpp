@@ -24,8 +24,9 @@ Node *newNode(int value) {
 }
 
 Node *insertNode(Node *root, int value) {
-
-    if(value < root->value) {
+    if (root == NULL) {
+        return newNode(value);
+    } else if (value < root->value) {
         root->left = insertNode(root->left, value);
     } else if (value > root->value) {
         root->right = insertNode(root->right, value);
@@ -42,7 +43,7 @@ int main() {
     cout << "hello" << endl;
 
     Node *root = NULL;
-    root = newNode(13);
+    root = insertNode(root, 13);
 
     insertNode(root, 19);
     insertNode(root, 11);
