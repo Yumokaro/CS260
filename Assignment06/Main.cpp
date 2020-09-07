@@ -38,14 +38,25 @@ Node *insertNode(Node *root, int value) {
 }
 
 // Start with the root, then go left>right
-void preOrderTrav (Node *root) {
+void pre_Order_Trav (Node *root) {
     // Go until leaf, then go back
     if (root == NULL)
         return;
 
     cout << "- " << root->value << " -";
-    preOrderTrav(root->left);
-    preOrderTrav(root->right);
+    pre_Order_Trav(root->left);
+    pre_Order_Trav(root->right);
+}
+// Go to lowest sub tree, print leafs, then go up
+void in_Order_Trav (Node *root) {
+    // Go until leaf, then go back
+    if (root == NULL)
+        return;
+
+    in_Order_Trav(root->left);
+    // change ordering of moving to node and printing
+    cout << "- " << root->value << " -";
+    in_Order_Trav(root->right);
 }
 
 
@@ -66,12 +77,15 @@ int main() {
     insertNode(root, 5);
 
     cout << "Preorder Traversal: \n";
-    preOrderTrav(root);
+    pre_Order_Trav(root);
 
     cout << "\n";
 
+    // 3 is start because it is farthest to left, before moving right @ 7
     cout << "Inorder Traversal: \n";
+    in_Order_Trav(root);
 
+    cout << "\n";
 
     return 0;
 }
