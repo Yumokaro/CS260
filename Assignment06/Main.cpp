@@ -43,7 +43,7 @@ void preOrderTrav (Node *root) {
     if (root == NULL)
         return;
 
-    cout << root->value << ", ";
+    cout << "- " << root->value << " -";
     preOrderTrav(root->left);
     preOrderTrav(root->right);
 }
@@ -51,7 +51,7 @@ void preOrderTrav (Node *root) {
 
 int main() {
 
-    cout << "hello" << endl;
+    cout << "hello; numbers are 3, 5, 7, 11, 13, 17, 19\n" << endl;
 
     // root starts at null, then becomes the first(new) node @ 13
     Node *root = NULL;
@@ -65,7 +65,13 @@ int main() {
     insertNode(root, 17);
     insertNode(root, 5);
 
+    cout << "Preorder Traversal: \n";
     preOrderTrav(root);
+
+    cout << "\n";
+
+    cout << "Inorder Traversal: \n";
+
 
     return 0;
 }
