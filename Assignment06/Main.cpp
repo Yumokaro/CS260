@@ -59,6 +59,19 @@ void in_Order_Trav (Node *root) {
     in_Order_Trav(root->right);
 }
 
+// Go to left leaf, right leaf, then go up to root
+void post_Order_Trav (Node *root) {
+    // Go until leaf, then go back
+    if (root == NULL)
+        return;
+
+    post_Order_Trav(root->left);
+    post_Order_Trav(root->right);
+    cout << "- " << root->value << " -";
+}
+
+
+
 
 int main() {
 
@@ -86,6 +99,14 @@ int main() {
     in_Order_Trav(root);
 
     cout << "\n";
+
+    // 5 is bottom of the rung, to the left of root @ 7
+    cout << "Postorder Traversal: \n";
+    post_Order_Trav(root);
+
+    cout << endl;
+
+
 
     return 0;
 }
