@@ -37,16 +37,27 @@ Node *insertNode(Node *root, int value) {
     return root;
 }
 
+// Start with the root, then go left>right
+void preOrderTrav (Node *root) {
+    // Go until leaf, then go back
+    if (root == NULL)
+        return;
 
+    cout << root->value << ", ";
+    preOrderTrav(root->left);
+    preOrderTrav(root->right);
+}
 
 
 int main() {
 
     cout << "hello" << endl;
 
+    // root starts at null, then becomes the first(new) node @ 13
     Node *root = NULL;
     root = insertNode(root, 13);
 
+    // add additional nodes to the tree
     insertNode(root, 19);
     insertNode(root, 11);
     insertNode(root, 3);
@@ -54,6 +65,7 @@ int main() {
     insertNode(root, 17);
     insertNode(root, 5);
 
+    preOrderTrav(root);
 
     return 0;
 }
