@@ -71,8 +71,6 @@ void post_Order_Trav (Node *root) {
 }
 
 
-
-
 int main() {
 
     cout << "hello; numbers are 3, 5, 7, 11, 13, 17, 19\n" << endl;
@@ -105,8 +103,6 @@ int main() {
     post_Order_Trav(root);
 
     cout << endl;
-
-
 
     return 0;
 }
