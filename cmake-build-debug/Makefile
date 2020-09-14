@@ -75,17 +75,6 @@ CMAKE_BINARY_DIR = "C:\Users\Tempo\OneDrive\Documents\Code Projects\School\CS260
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2020.1.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -96,6 +85,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	"C:\Program Files\JetBrains\CLion 2020.1.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -129,6 +129,46 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named CS260
+
+# Build rule for target.
+CS260: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CS260
+.PHONY : CS260
+
+# fast build rule for target.
+CS260/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/build
+.PHONY : CS260/fast
+
+Assignment07/main.obj: Assignment07/main.cpp.obj
+
+.PHONY : Assignment07/main.obj
+
+# target to build an object file
+Assignment07/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/Assignment07/main.cpp.obj
+.PHONY : Assignment07/main.cpp.obj
+
+Assignment07/main.i: Assignment07/main.cpp.i
+
+.PHONY : Assignment07/main.i
+
+# target to preprocess a source file
+Assignment07/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/Assignment07/main.cpp.i
+.PHONY : Assignment07/main.cpp.i
+
+Assignment07/main.s: Assignment07/main.cpp.s
+
+.PHONY : Assignment07/main.s
+
+# target to generate assembly for a file
+Assignment07/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/Assignment07/main.cpp.s
+.PHONY : Assignment07/main.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -137,6 +177,10 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... CS260
+	@echo ... Assignment07/main.obj
+	@echo ... Assignment07/main.i
+	@echo ... Assignment07/main.s
 .PHONY : help
 
 
