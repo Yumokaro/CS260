@@ -10,11 +10,6 @@ int main() {
     cout << "hello" << endl;
 
     hash_table T;
-    /*
-    if (T.isEmpty()) {
-        cout << "Table is empty" << endl;
-    }
-     */
 
     T.insert(0, "Carl0");
     T.insert(1, "Carl1");
@@ -24,7 +19,6 @@ int main() {
     T.insert(4, "Carl4");
 
     T.isEmpty();
-
     T.print_hash_table();
 
 

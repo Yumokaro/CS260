@@ -54,6 +54,7 @@ int hash_table::hash_function(int key) {
 // https://www.geeksforgeeks.org/mapbegin-end-c-stl/
 void hash_table::insert(int key, string name) {
     int t1 = key;
+
     // must use & to iterate through to print
     auto& temp = hash_table[t1];
     auto iterate = begin(temp);
@@ -61,6 +62,7 @@ void hash_table::insert(int key, string name) {
     int x = 0;
     // don't use a comma >_>
     // and ide auto &: temp; adjust above if needed
+    // for-loop beginning is set already ^^^
     for (; iterate != end(temp); iterate++) {
         // first = int ; second = basic_string
         if (iterate->first = key) {
@@ -73,7 +75,7 @@ void hash_table::insert(int key, string name) {
         }
     }
 
-    // use bool??
+    // use bool??  -- works fine
     if (x != 1) {
         // must use front or back to emplace
         temp.emplace_back(key, name);
@@ -84,11 +86,10 @@ void hash_table::print_hash_table() {
     for (int i = 0; i < tables; i++) {
 
         auto it = hash_table[i].begin();
+        // for-loop beginning is set already ^^^
         for (; it != hash_table[i].end(); it++) {
             cout << it->first << " is " << it->second << endl;
         }
-
-        //cout << it->first << " : " << it->second << endl;
     }
     return;
 }
