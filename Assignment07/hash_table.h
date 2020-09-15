@@ -18,7 +18,7 @@ using namespace std;
 
 class hash_table {
     private:
-        int tables = 5;
+        static const int tables = 5;
         //https://stackoverflow.com/questions/24811418/c-list-of-pairs
         // hash table array size of ^^^ tables using lists
         list<pair<int, string>> hash_table[tables];
