@@ -15,6 +15,8 @@ int main() {
     T.insert(1, "Carl1");
     T.insert(2, "Carl2");
     T.insert(3, "Carl3");
+
+    // change key 2
     T.insert(2, "Shake");
     T.insert(4, "Carl4");
 
