@@ -55,6 +55,7 @@ void hash_table::insert(int key, string name) {
     auto temp = hash_table[t1];
     auto iterate = begin(temp);
 
+    int x = 0;
     // don't use a comma >_>
     // and ide auto &: temp; adjust above if needed
     for (; iterate != end(temp); iterate++) {
@@ -62,11 +63,20 @@ void hash_table::insert(int key, string name) {
         if (iterate->first = key) {
             // replace with new name
             iterate->second = name;
+
+            x = 1;
             // break from loop
             break;
         }
-
     }
+
+    // use bool??
+    if (x != 1) {
+        // must use front or back to emplace
+        temp.emplace_back(key, name);
+    }
+
+    return;
 
 }
 
