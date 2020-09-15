@@ -1,15 +1,8 @@
 // Employees and ID numbers
 
-
 #include <iostream>
-// STLs
-#include <list>
-#include <cstring>
-
 #include "hash_table.h"
 
-//using std::cout;
-//using std::endl;
 using namespace std;
 
 
@@ -23,5 +16,9 @@ int main() {
     }
      */
 
+    T.insert(0, "Carl");
+    //T.insert(1, "Shake");
+
+    T.print_hash_table();
     return 0;
 }

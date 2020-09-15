@@ -75,9 +75,19 @@ void hash_table::insert(int key, string name) {
         // must use front or back to emplace
         temp.emplace_back(key, name);
     }
+}
 
+void hash_table::print_hash_table() {
+    for (int i = 0; i < tables; i++) {
+        auto it = hash_table[i].begin();
+        /*
+        for (; it != hash_table[i].end(); it++) {
+            cout << it->first << " : " << it->second << endl;
+        }
+         */
+        cout << it->first << " : " << it->second << endl;
+    }
     return;
-
 }
 
 
