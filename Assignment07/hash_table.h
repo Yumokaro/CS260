@@ -5,8 +5,8 @@
 #include <iostream>
 // STLs
 #include <list>
-// begin(),end() - string or cstring?
-#include <cstring>
+// begin(),end() - string or cstring?  -- both work
+#include <string>
 
 using namespace std;
 
