@@ -7,7 +7,7 @@
 #include <iostream>
 // STLs
 #include <list>
-    // begin(),end()
+    // begin(),end() - string or cstring?
 #include <cstring>
 
 #include "hash_table.h"
@@ -18,9 +18,10 @@ using namespace std;
 
 class hash_table {
     private:
-
+        int tables = 5;
         //https://stackoverflow.com/questions/24811418/c-list-of-pairs
-        list<pair<int, string>> table
+        // hash table array size of ^^^ tables using lists
+        list<pair<int, string>> hash_table[tables];
 
     public:
         bool isEmpty();
