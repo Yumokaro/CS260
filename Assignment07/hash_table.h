@@ -18,8 +18,9 @@ class hash_table {
 
     public:
         bool isEmpty();
-        void insert();
+        void insert(int key, string name);
         void remove();
+
 };
 
 
