@@ -17,10 +17,11 @@ int main() {
     cout << "hello" << endl;
 
     hash_table T;
-
+    /*
     if (T.isEmpty()) {
         cout << "Table is empty" << endl;
     }
+     */
 
     return 0;
 }

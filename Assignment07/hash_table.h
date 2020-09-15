@@ -5,13 +5,9 @@
 #include <iostream>
 // STLs
 #include <list>
-    // begin(),end() - string or cstring?
+// begin(),end() - string or cstring?
 #include <cstring>
 
-#include "hash_table.h"
-
-//using std::cout;
-//using std::endl;
 using namespace std;
 
 class hash_table {
@@ -24,7 +20,7 @@ class hash_table {
     public:
         // check is DS is empty
         bool isEmpty();
-        void hash_function(int key);
+        int hash_function(int key);
         void insert(int key, string name);
         // remove unique key
         void remove(int key);
@@ -33,17 +29,24 @@ class hash_table {
 
 bool hash_table::isEmpty() {
     int x = 0;
-    for(int i = 0; i < tables; i++) {
+    for (int i = 0; i < tables; i++) {
         x += hash_table[i].size();
     }
 
-    if(x > 0) {
+    if (x > 0) {
+        // table is NOT empty
         return false;
     } else {
+        // table is empty ;)
         return true;
     }
 }
 
+// needed? or complicates
+int hash_table::hash_function(int key) {
+    key = (key - 1);
+    return key;
+}
 
 
 #endif //CS260_HASH_TABLE_H
