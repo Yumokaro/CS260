@@ -77,7 +77,7 @@ void hash_table::insert(int key, string name) {
 
     // use bool??  -- works fine
     if (x != 1) {
-        // must use front or back to emplace
+        // must use front or back to emplace  -- does not add to back of list...
         temp.emplace_back(key, name);
     }
 }
