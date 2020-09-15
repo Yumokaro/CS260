@@ -48,5 +48,27 @@ int hash_table::hash_function(int key) {
     return key;
 }
 
+// iterate through list to check if key exists
+// https://www.geeksforgeeks.org/mapbegin-end-c-stl/
+void hash_table::insert(int key, string name) {
+    int t1 = key;
+    auto temp = hash_table[t1];
+    auto iterate = begin(temp);
+
+    // don't use a comma >_>
+    // and ide auto &: temp; adjust above if needed
+    for (; iterate != end(temp); iterate++) {
+        // first = int ; second = basic_string
+        if (iterate->first = key) {
+            // replace with new name
+            iterate->second = name;
+            // break from loop
+            break;
+        }
+
+    }
+
+}
+
 
 #endif //CS260_HASH_TABLE_H
