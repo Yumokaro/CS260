@@ -1,5 +1,3 @@
-
-
 // Reuse me
 #ifndef CS260_HASH_TABLE_H
 #define CS260_HASH_TABLE_H
@@ -24,14 +22,27 @@ class hash_table {
         list<pair<int, string>> hash_table[tables];
 
     public:
+        // check is DS is empty
         bool isEmpty();
         void hash_function(int key);
         void insert(int key, string name);
+        // remove unique key
         void remove(int key);
         void print_hash_table();
-
 };
 
+bool hash_table::isEmpty() {
+    int x = 0;
+    for(int i = 0; i < tables; i++) {
+        x += hash_table[i].size();
+    }
+
+    if(x > 0) {
+        return false;
+    } else {
+        return true;
+    }
+}
 
 
 
