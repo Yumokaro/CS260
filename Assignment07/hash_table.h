@@ -14,7 +14,12 @@
 using namespace std;
 
 class hash_table {
+    //private:
 
+    public:
+        bool isEmpty();
+        void insert();
+        void remove();
 };
 
 
