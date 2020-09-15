@@ -52,7 +52,8 @@ int hash_table::hash_function(int key) {
 // https://www.geeksforgeeks.org/mapbegin-end-c-stl/
 void hash_table::insert(int key, string name) {
     int t1 = key;
-    auto temp = hash_table[t1];
+    // must use & to iterate through to print
+    auto& temp = hash_table[t1];
     auto iterate = begin(temp);
 
     int x = 0;
@@ -79,13 +80,13 @@ void hash_table::insert(int key, string name) {
 
 void hash_table::print_hash_table() {
     for (int i = 0; i < tables; i++) {
+
         auto it = hash_table[i].begin();
-        /*
         for (; it != hash_table[i].end(); it++) {
-            cout << it->first << " : " << it->second << endl;
+            cout << it->first << " is " << it->second << endl;
         }
-         */
-        cout << it->first << " : " << it->second << endl;
+
+        //cout << it->first << " : " << it->second << endl;
     }
     return;
 }

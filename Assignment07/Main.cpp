@@ -16,8 +16,11 @@ int main() {
     }
      */
 
-    T.insert(0, "Carl");
-    //T.insert(1, "Shake");
+    T.insert(0, "Carl0");
+    T.insert(1, "Carl1");
+    T.insert(2, "Carl2");
+    T.insert(3, "Carl3");
+    T.insert(4, "Carl4");
 
     T.print_hash_table();
     return 0;
