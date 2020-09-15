@@ -91,7 +91,6 @@ void hash_table::print_hash_table() {
             cout << it->first << " is " << it->second << endl;
         }
     }
-    return;
 }
 
 
