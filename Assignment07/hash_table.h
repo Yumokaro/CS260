@@ -35,9 +35,11 @@ bool hash_table::isEmpty() {
 
     if (x > 0) {
         // table is NOT empty
+        cout << "Table is not empty, here it is:" << endl;
         return false;
     } else {
         // table is empty ;)
+        cout << "Table is empty, try again." << endl;
         return true;
     }
 }
