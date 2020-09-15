@@ -20,7 +20,7 @@ class hash_table {
     public:
         // check is DS is empty
         bool isEmpty();
-        int hash_function(int key);
+        static int hash_function(int key);  // Made static post check
         void insert(int key, string name);
         // remove unique key
         void remove(int key);
