@@ -5,27 +5,25 @@
 #include <iostream>
 // STLs
 #include <list>
-// begin(),end() - string or cstring?  -- both work
-#include <string>
+#include <string>   // begin(),end() - string or cstring?  -- both work
 
 using namespace std;
 
 class hash_table {
     private:
         static const int tables = 5;
-        //https://stackoverflow.com/questions/24811418/c-list-of-pairs
-        // hash table array size of ^^^ tables using lists
+            // https://stackoverflow.com/questions/24811418/c-list-of-pairs
+            // hash table array size of ^^^ tables using lists
         list<pair<int, string>> hash_table[tables];
 
     public:
-        // check is DS is empty
-        bool isEmpty();
-        void insert(int key, string name);
-        // remove unique key
-        void remove(int key);
+        bool isEmpty(); // check is DS is empty
+        void insert(int key, const string& name);
+        void remove(int key);   // remove by unique key
         void print_hash_table();
 };
 
+    // Could use list::empty()
 bool hash_table::isEmpty() {
     int x = 0;
     for (int i = 0; i < tables; i++) {
@@ -43,44 +41,43 @@ bool hash_table::isEmpty() {
     }
 }
 
-// iterate through list to check if key exists
-// https://www.geeksforgeeks.org/mapbegin-end-c-stl/
-void hash_table::insert(int key, string name) {
-    int t1 = key;
-
-    // must use & to iterate through to print
-    auto& temp = hash_table[t1];
+    // iterate through list to check if key exists
+    // https://www.geeksforgeeks.org/mapbegin-end-c-stl/
+void hash_table::insert(int key, const string& name) {
+    int u_key = key;
+        // must use & to iterate through to print
+    auto& temp = hash_table[u_key];
     auto iterate = begin(temp);
 
     int x = 0;
-    // don't use a comma >_>
-    // and ide auto &: temp; adjust above if needed
-    // for-loop beginning is set already ^^^
+        // don't use a comma >_>
+        // and ide auto &: temp; adjust above if needed -- DOES NOT USE AUTOMATICALLY
+        // for-loop beginning is set already ^^^
     for (; iterate != end(temp); iterate++) {
-        // first = int ; second = basic_string
-        if (iterate->first = key) {
-            // replace with new name
+            // first = int ; second = basic_string
+        if (iterate->first == key) {
+                // replace with new name
             iterate->second = name;
 
             x = 1;
-            // break from loop
+                // break from loop
             break;
         }
     }
-
-    // use bool??  -- works fine
+        // use bool??  -- works fine
     if (x != 1) {
-        // must use front or back to emplace  -- does not add to back of list...
+            // must use front or back to emplace
+            // -- does not add to back of array, each array element is a list...
         temp.emplace_back(key, name);
     }
 }
 
+    // clang-tidy modified to this form
 void hash_table::print_hash_table() {
-    for (int i = 0; i < tables; i++) {
-
-        auto it = hash_table[i].begin();
-        // for-loop beginning is set already ^^^
-        for (; it != hash_table[i].end(); it++) {
+    for (auto & i : hash_table) {
+        auto it = i.begin();
+            // for-loop beginning is set already ^^^
+        for (; it != i.end(); it++) {
             cout << it->first << " is " << it->second << endl;
         }
     }
