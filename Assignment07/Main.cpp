@@ -6,6 +6,7 @@
 
 using namespace std;
 
+int remove_key;
 
 int main() {
     cout << "hello" << endl;
@@ -26,8 +27,10 @@ int main() {
 
     cout << "\n::Remove a value ::" << endl;
     cout << "Enter a value to remove:";
+
     cin >> remove_key;
     T.remove(remove_key);
+    T.remove(2);
     T.print_hash_table();
 
 
