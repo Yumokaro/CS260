@@ -19,8 +19,9 @@ class hash_table {
     public:
         bool isEmpty(); // check is DS is empty
         void insert(int key, const string& name);
-        void remove(int key);   // remove by unique key
+        void remove(int remove_key);   // remove by unique key
         void print_hash_table();
+
 };
 
     // Could use list::empty()
@@ -72,13 +73,29 @@ void hash_table::insert(int key, const string& name) {
     }
 }
 
+int remove_key;
     // use erase for list container...
     // https://www.geeksforgeeks.org/list-erase-function-in-c-stl/?ref=lbp
-void hash_table::remove(int key) {
+void hash_table::remove(int remove_key) {
+    int u_key = remove_key;
+    auto& temp = hash_table[u_key];
+    auto iterate = begin(temp);
 
+    //int x = 0;
+    for (; iterate != end(temp); iterate++) {
+        if (iterate->first == remove_key) {
+            iterate = temp.erase(iterate);
+            cout << "Key " << remove_key << " has been erased.\n";
+            //x = 1;
+            break;
+        }
+    }
+    /*
+    if (x != 1) {
+        cout << "Key does not exist" << endl;
+    }
+    */
 }
-
-
 
     // clang-tidy modified to this form
 void hash_table::print_hash_table() {

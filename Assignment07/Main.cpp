@@ -24,6 +24,12 @@ int main() {
     T.isEmpty();
     T.print_hash_table();
 
+    cout << "\n::Remove a value ::" << endl;
+    cout << "Enter a value to remove:";
+    cin >> remove_key;
+    T.remove(remove_key);
+    T.print_hash_table();
+
 
     return 0;
 }
