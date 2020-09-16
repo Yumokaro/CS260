@@ -20,7 +20,6 @@ class hash_table {
     public:
         // check is DS is empty
         bool isEmpty();
-        static int hash_function(int key);  // Made static post check
         void insert(int key, string name);
         // remove unique key
         void remove(int key);
@@ -42,12 +41,6 @@ bool hash_table::isEmpty() {
         cout << "Table is empty, try again." << endl;
         return true;
     }
-}
-
-// needed? or complicates
-int hash_table::hash_function(int key) {
-    key = (key - 1);
-    return key;
 }
 
 // iterate through list to check if key exists
