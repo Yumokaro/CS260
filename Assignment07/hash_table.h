@@ -18,6 +18,7 @@ class hash_table {
 
     public:
         bool isEmpty(); // check is DS is empty
+        void hash();
         void insert(int key, const string& name);
         void remove(int remove_key);   // remove by unique key
         void print_hash_table();
@@ -41,6 +42,16 @@ bool hash_table::isEmpty() {
         return true;
     }
 }
+
+void hash_table::hash(int tables) {
+
+
+    // result %= capacity ((tables))
+    // result %= tables;
+    // return result;
+}
+
+
 
     // iterate through list to check if key exists
     // https://www.geeksforgeeks.org/mapbegin-end-c-stl/
