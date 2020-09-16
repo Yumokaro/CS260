@@ -1,4 +1,5 @@
 // Employees and ID numbers
+// Hashing is done by a unique key {element 1} of each list item of the array
 
 #include <iostream>
 #include "hash_table.h"

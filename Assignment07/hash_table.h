@@ -72,6 +72,14 @@ void hash_table::insert(int key, const string& name) {
     }
 }
 
+    // use erase for list container...
+    // https://www.geeksforgeeks.org/list-erase-function-in-c-stl/?ref=lbp
+void hash_table::remove(int key) {
+
+}
+
+
+
     // clang-tidy modified to this form
 void hash_table::print_hash_table() {
     for (auto & i : hash_table) {
