@@ -18,7 +18,7 @@ class hash_table {
 
     public:
         bool isEmpty(); // check is DS is empty
-        void hash();
+        void hash(int key);
         void insert(int key, const string& name);
         void remove(int remove_key);   // remove by unique key
         void print_hash_table();
@@ -43,7 +43,7 @@ bool hash_table::isEmpty() {
     }
 }
 
-void hash_table::hash(int tables) {
+void hash_table::hash(int key) {
 
 
     // result %= capacity ((tables))
@@ -108,7 +108,7 @@ void hash_table::remove(int remove_key) {
     */
 }
 
-    // clang-tidy modified to this form
+    // clang-tidy modified to this form :::: range-based for loop
 void hash_table::print_hash_table() {
     for (auto & i : hash_table) {
         auto it = i.begin();
