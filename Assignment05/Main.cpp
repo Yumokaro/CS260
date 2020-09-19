@@ -1,4 +1,4 @@
-// Will attempt K sorted
+// Will attempt K sorted, large or small?
 // https://www.geeksforgeeks.org/nearly-sorted-algorithm/
 
 
