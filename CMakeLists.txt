@@ -12,11 +12,11 @@ set(CMAKE_CXX_STANDARD 14)
 #add_executable(CS260 Assignment04/Main.cpp)
 
 # Assignment 05
-#add_executable(CS260 Assignment05/Main.cpp)
+add_executable(CS260 Assignment05/Main.cpp)
 
 # Assignment 06
 #add_executable(CS260 Assignment06/Main.cpp)
 
 # Assignment 07
-add_executable(CS260 Assignment07/Main.cpp)
+#add_executable(CS260 Assignment07/Main.cpp)
 

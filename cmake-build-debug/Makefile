@@ -142,32 +142,32 @@ CS260/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/build
 .PHONY : CS260/fast
 
-Assignment07/Main.obj: Assignment07/Main.cpp.obj
+Assignment05/Main.obj: Assignment05/Main.cpp.obj
 
-.PHONY : Assignment07/Main.obj
+.PHONY : Assignment05/Main.obj
 
 # target to build an object file
-Assignment07/Main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/Assignment07/Main.cpp.obj
-.PHONY : Assignment07/Main.cpp.obj
+Assignment05/Main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/Assignment05/Main.cpp.obj
+.PHONY : Assignment05/Main.cpp.obj
 
-Assignment07/Main.i: Assignment07/Main.cpp.i
+Assignment05/Main.i: Assignment05/Main.cpp.i
 
-.PHONY : Assignment07/Main.i
+.PHONY : Assignment05/Main.i
 
 # target to preprocess a source file
-Assignment07/Main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/Assignment07/Main.cpp.i
-.PHONY : Assignment07/Main.cpp.i
+Assignment05/Main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/Assignment05/Main.cpp.i
+.PHONY : Assignment05/Main.cpp.i
 
-Assignment07/Main.s: Assignment07/Main.cpp.s
+Assignment05/Main.s: Assignment05/Main.cpp.s
 
-.PHONY : Assignment07/Main.s
+.PHONY : Assignment05/Main.s
 
 # target to generate assembly for a file
-Assignment07/Main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/Assignment07/Main.cpp.s
-.PHONY : Assignment07/Main.cpp.s
+Assignment05/Main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/Assignment05/Main.cpp.s
+.PHONY : Assignment05/Main.cpp.s
 
 # Help Target
 help:
@@ -178,9 +178,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... CS260
-	@echo ... Assignment07/Main.obj
-	@echo ... Assignment07/Main.i
-	@echo ... Assignment07/Main.s
+	@echo ... Assignment05/Main.obj
+	@echo ... Assignment05/Main.i
+	@echo ... Assignment05/Main.s
 .PHONY : help
 
 
