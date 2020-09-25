@@ -4,11 +4,16 @@
 
 #include <iostream>
 #include <array>
+#include "array.h"
+
+
 using namespace std;
 
 
+int value;
 
 int main () {
+    the_array A;
 
     cout << "hello friend, I'm working :)" << endl;
 
