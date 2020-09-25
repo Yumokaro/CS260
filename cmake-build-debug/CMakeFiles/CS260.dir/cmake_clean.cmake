@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/CS260.dir/Assignment05/Main.cpp.obj"
+  "CMakeFiles/CS260.dir/AssignmentFinal/Main.cpp.obj"
   "CS260.exe"
   "CS260.exe.manifest"
   "CS260.pdb"

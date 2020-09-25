@@ -142,32 +142,32 @@ CS260/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/build
 .PHONY : CS260/fast
 
-Assignment05/Main.obj: Assignment05/Main.cpp.obj
+AssignmentFinal/Main.obj: AssignmentFinal/Main.cpp.obj
 
-.PHONY : Assignment05/Main.obj
+.PHONY : AssignmentFinal/Main.obj
 
 # target to build an object file
-Assignment05/Main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/Assignment05/Main.cpp.obj
-.PHONY : Assignment05/Main.cpp.obj
+AssignmentFinal/Main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/AssignmentFinal/Main.cpp.obj
+.PHONY : AssignmentFinal/Main.cpp.obj
 
-Assignment05/Main.i: Assignment05/Main.cpp.i
+AssignmentFinal/Main.i: AssignmentFinal/Main.cpp.i
 
-.PHONY : Assignment05/Main.i
+.PHONY : AssignmentFinal/Main.i
 
 # target to preprocess a source file
-Assignment05/Main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/Assignment05/Main.cpp.i
-.PHONY : Assignment05/Main.cpp.i
+AssignmentFinal/Main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/AssignmentFinal/Main.cpp.i
+.PHONY : AssignmentFinal/Main.cpp.i
 
-Assignment05/Main.s: Assignment05/Main.cpp.s
+AssignmentFinal/Main.s: AssignmentFinal/Main.cpp.s
 
-.PHONY : Assignment05/Main.s
+.PHONY : AssignmentFinal/Main.s
 
 # target to generate assembly for a file
-Assignment05/Main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/Assignment05/Main.cpp.s
-.PHONY : Assignment05/Main.cpp.s
+AssignmentFinal/Main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CS260.dir\build.make CMakeFiles/CS260.dir/AssignmentFinal/Main.cpp.s
+.PHONY : AssignmentFinal/Main.cpp.s
 
 # Help Target
 help:
@@ -178,9 +178,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... CS260
-	@echo ... Assignment05/Main.obj
-	@echo ... Assignment05/Main.i
-	@echo ... Assignment05/Main.s
+	@echo ... AssignmentFinal/Main.obj
+	@echo ... AssignmentFinal/Main.i
+	@echo ... AssignmentFinal/Main.s
 .PHONY : help
 
 
