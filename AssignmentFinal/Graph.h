@@ -3,6 +3,17 @@
 
 
 class Graph {
+private:
+    int vertex;
+    vector<list<int>> adjacent;
+
+public:
+    void add_vertex();
+    void add_edge();
+    void shortest_path();
+    void min_span_tree();
+
+
 
 
 
