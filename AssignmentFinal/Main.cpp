@@ -23,7 +23,7 @@ using namespace std;
 int main () {
     cout << "hay" << endl;
 
-    //Graph G;
+    Graph G(int V);
 
     return 0;
 }
