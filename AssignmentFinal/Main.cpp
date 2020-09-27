@@ -25,5 +25,22 @@ int main () {
 
     Graph G(int V);
 
+    G.add_edge();
+    G.add_edge();
+    G.add_edge();
+    G.add_edge();
+    G.add_edge();
+    G.add_edge();
+    G.add_edge();
+    G.add_edge();
+    G.add_edge();
+    G.add_edge();
+    G.add_edge();
+    G.add_edge();
+    G.add_edge();
+    G.add_edge();
+
+
+
     return 0;
 }
