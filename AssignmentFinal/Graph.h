@@ -24,7 +24,7 @@ public:
     // Graph (int Vertex);
     // Constructor with parameters
 
-    Graph (int num_verts) {
+    explicit Graph (int num_verts) {
         this->Vertex = num_verts;
         adjacency_list = new list<pair<int, int>> [num_verts];
     }
