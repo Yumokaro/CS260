@@ -37,12 +37,12 @@ int main () {
     G.add_edge(9,10,5);
 
 
-    cout << "There are [12] Vertices - Enter 0 through 11 as a starting point: ";
+    cout << "There are [12] Vertices - Enter 1 through 12 as a starting point: ";
 
     int acquire_source;
     cin >> acquire_source;
 
-    G.dijkstra(acquire_source);
+    G.dijkstra(acquire_source - 1);
 
     return 0;
 }

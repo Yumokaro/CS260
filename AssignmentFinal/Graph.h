@@ -33,15 +33,7 @@ public:
     void add_edge(int u, int v, int w);
     void dijkstra(int source);
 };
-/*
-Graph::Graph (int Vertex) {
-    this->Vertex = Vertex;
-    adjacency_list = new list<pair<int, int>> [Vertex];
-}
 
-     adjacency_list[u].push_back(make_pair(v, w));
-    adjacency_list[v].push_back(make_pair(u, w));
-*/
 void Graph::add_edge(int u, int v, int w) {
     // Send both to end of line, then make a union using ints for vertex and weight
     adjacency_list[u].emplace_back(v, w);
@@ -82,17 +74,17 @@ void Graph::dijkstra(int source) {
     cout << "\n\tVertex |" << " Distance from Source" << endl;
     for (int i = 0; i < Vertex; ++i)
 
-        if (i < 10) {
+        if (i < 10 - 1) {
             if (i == source) {
-                cout << "\t *** " << i << " | " << dist[i] << endl;
+                cout << "\t *** " << i+1 << " | " << dist[i] << endl;
             } else {
-                cout << "\t     " << i << " | " << dist[i] << endl;
+                cout << "\t     " << i+1  << " | " << dist[i] << endl;
             }
         } else {
             if (i == source) {
-                cout << "\t*** " << i << " | " << dist[i] << endl;
+                cout << "\t*** " << i+1 << " | " << dist[i] << endl;
             } else {
-                cout << "\t    " << i << " | " << dist[i] << endl;
+                cout << "\t    " << i+1 << " | " << dist[i] << endl;
             }
         }
 }
