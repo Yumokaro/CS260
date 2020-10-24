@@ -18,15 +18,15 @@ using namespace std;
 
 class Graph {
 private:
-    int V;
+    int Vertex;
     list<pair<int,int>> *adjacency_list;
 public:
-    //Graph (int V);
+    // Graph (int Vertex);
     // Constructor with parameters
 
-    Graph (int V) {
-        this->V = V;
-        adjacency_list = new list<pair<int, int>> [V];
+    Graph (int num_verts) {
+        this->Vertex = num_verts;
+        adjacency_list = new list<pair<int, int>> [num_verts];
     }
 
     // Matrix [u][v]
@@ -34,9 +34,9 @@ public:
     void dijkstra(int source);
 };
 /*
-Graph::Graph(int V) {
-    this->V = V;
-    adjacency_list = new list<pair<int, int>> [V];
+Graph::Graph (int Vertex) {
+    this->Vertex = Vertex;
+    adjacency_list = new list<pair<int, int>> [Vertex];
 }
 */
 void Graph::add_edge(int u, int v, int w) {
@@ -48,7 +48,7 @@ void Graph::add_edge(int u, int v, int w) {
 void Graph::dijkstra(int source) {
     // Set to allow ordering
     set<pair<int,int>> setds;
-    vector<int> dist(V, initial_distance);
+    vector<int> dist(Vertex, initial_distance);
     setds.insert(make_pair(0,source));
     dist[source] = 0;
 
@@ -74,6 +74,24 @@ void Graph::dijkstra(int source) {
             }
         }
     }
+
+    // Print output
+    cout << "\n\tVertex |" << " Distance from Source" << endl;
+    for (int i = 0; i < Vertex; ++i)
+
+        if (i < 10) {
+            if (i == source) {
+                cout << "\t *** " << i << " | " << dist[i] << endl;
+            } else {
+                cout << "\t     " << i << " | " << dist[i] << endl;
+            }
+        } else {
+            if (i == source) {
+                cout << "\t*** " << i << " | " << dist[i] << endl;
+            } else {
+                cout << "\t    " << i << " | " << dist[i] << endl;
+            }
+        }
 }
 
 #endif //CS260_GRAPH_H
