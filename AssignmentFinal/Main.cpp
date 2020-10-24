@@ -10,11 +10,6 @@
 
 // STLs
 #include <iostream>
-#include <list>
-#include <vector>
-#include <utility>
-#include <string>
-#include <set>
 #include "Graph.h"
 
 using namespace std;
@@ -41,10 +36,12 @@ int main () {
     G.add_edge(8,10,2);
     G.add_edge(9,10,5);
 
-    int acquire_source;
+
     cout << "There are [12] Vertices - Enter 0 through 11 as a starting point: ";
-    // Set me as the source!!
+
+    int acquire_source;
     cin >> acquire_source;
+
     G.dijkstra(acquire_source);
 
     return 0;

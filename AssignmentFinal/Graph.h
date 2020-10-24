@@ -38,11 +38,14 @@ Graph::Graph (int Vertex) {
     this->Vertex = Vertex;
     adjacency_list = new list<pair<int, int>> [Vertex];
 }
+
+     adjacency_list[u].push_back(make_pair(v, w));
+    adjacency_list[v].push_back(make_pair(u, w));
 */
 void Graph::add_edge(int u, int v, int w) {
     // Send both to end of line, then make a union using ints for vertex and weight
-    adjacency_list[u].push_back(make_pair(v, w));
-    adjacency_list[v].push_back(make_pair(u, w));
+    adjacency_list[u].emplace_back(v, w);
+    adjacency_list[v].emplace_back(u, w);
 }
 
 void Graph::dijkstra(int source) {
