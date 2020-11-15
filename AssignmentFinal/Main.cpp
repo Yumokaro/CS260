@@ -18,6 +18,7 @@ using namespace std;
 int main () {
     //cout << "hay" << endl;
 
+    // n
     int number_of_vertices = 12;
     Graph G(number_of_vertices);
 
