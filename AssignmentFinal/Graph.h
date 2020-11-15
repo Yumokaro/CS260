@@ -47,6 +47,7 @@ void Graph::dijkstra(int source) {
     setds.insert(make_pair(0,source));
     dist[source] = 0;
 
+    // O(n*(n(log n(1))) = n^2 log n  ??
     while (!setds.empty()) {
         pair<int,int> tmp = *(setds.begin());
         setds.erase(setds.begin());
@@ -72,8 +73,10 @@ void Graph::dijkstra(int source) {
 
     // Print output
     cout << "\n\tVertex |" << " Distance from Source" << endl;
+    // O(1(1)) = 1 -- real time
     for (int i = 0; i < Vertex; ++i)
 
+        // O(1) Always run the same.
         if (i < 10 - 1) {
             if (i == source) {
                 cout << "\t *** " << i+1 << " | " << dist[i] << endl;
